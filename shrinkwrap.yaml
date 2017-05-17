@@ -3,6 +3,7 @@ dependencies:
   js-yaml@^3.8.4: 3.8.4
   midi@^0.9.5: 0.9.5
   nodemon@^1.11.0: 1.11.0
+  robotjs@^0.4.7: 0.4.7
 packages:
   /abbrev/1.1.0: d0554c2256636e2f56e7c2e5ad183f859428d81f
   /ansi-regex/2.1.1: c3b33ab5ee360d86e0e628f0468ae7ef27d654df
@@ -12,6 +13,12 @@ packages:
       arrify: 1.0.1
       micromatch: 2.3.11
     resolution: a3e52fa39168c825ff57b0248126ce5a8ff95507
+  /aproba/1.1.1: 95d3600f07710aa0e9298c726ad5ecf2eacbabab
+  /are-we-there-yet/1.1.4:
+    dependencies:
+      delegates: 1.0.0
+      readable-stream: 2.2.9
+    resolution: bb5dca382bb94f05e15194373d16fd3ba1ca110d
   /argparse/1.0.9:
     dependencies:
       sprintf-js: 1.0.3
@@ -27,6 +34,10 @@ packages:
   /balanced-match/0.4.2: cb3f3e3c732dc0f01ee70b403f302e61d7709838
   /binary-extensions/1.8.0: 48ec8d16df4377eae5fa5884682480af4d95c774
   /bindings/1.2.1: 14ad6113812d2d37d72e67b4cacb4bb726505f11
+  /bl/1.2.1:
+    dependencies:
+      readable-stream: 2.2.9
+    resolution: cac328f7bee45730d404b692203fcb590e172d5e
   /brace-expansion/1.1.7:
     dependencies:
       balanced-match: 0.4.2
@@ -59,6 +70,8 @@ packages:
       path-is-absolute: 1.0.1
       readdirp: 2.1.0
     resolution: 798e689778151c8076b4b360e5edd28cda2bb468
+  /chownr/1.0.1: e2a75042a9551908bebd25b8523d5f9769d79181
+  /code-point-at/1.1.0: 0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77
   /concat-map/0.0.1: d8a96bd77fd68df7793a73036a3ba0d5405d477b
   /configstore/1.4.0:
     dependencies:
@@ -71,12 +84,14 @@ packages:
       write-file-atomic: 1.3.4
       xdg-basedir: 2.0.0
     resolution: c35781d0501d268c25c54b8b17f6240e8a4fb021
+  /console-control-strings/1.1.0: 3d7cf4464db6446ea644bf4b39507f9851008e8e
   /core-util-is/1.0.2: b5fd54220aa2bc5ab57aab7140c940754503c1a7
   /debug/2.6.7:
     dependencies:
       ms: 2.0.0
     resolution: 92bad1f6d05bbb6bba22cca88bcd0ec894c2861e
   /deep-extend/0.4.2: 48b699c27e334bf89f10892be432f6e4c7d34a7f
+  /delegates/1.0.0: 84c6e159b81904fdca59a0ef44cd870d31250f9a
   /duplexer/0.1.1: ace6ff808c1ce66b57d1ebf97977acb02334cfc1
   /duplexify/3.5.0:
     dependencies:
@@ -89,6 +104,10 @@ packages:
     dependencies:
       once: 1.3.3
     resolution: d4596e702734a93e40e9af864319eabd99ff2f0e
+  /end-of-stream/1.4.0:
+    dependencies:
+      once: 1.4.0
+    resolution: 7a90d833efda6cfa6eac0f4949dbb0fad3a63206
   /es6-promise/3.3.1: a08cdde84ccdbf34d027a1451bc91d4bcd28a613
   /escape-string-regexp/1.0.5: 1b61c0562190a8dff6ae3bb2cf0200ca130b86d4
   /esprima/3.1.3: fdca51cee6133895e3c88d535ce49dbff62a4633
@@ -110,6 +129,7 @@ packages:
     dependencies:
       fill-range: 2.2.3
     resolution: a299effd335fe2721ebae8e257ec79644fc85337
+  /expand-template/1.0.3: 6c303323177a62b1b22c070279f7861287b69b1a
   /extglob/0.3.2:
     dependencies:
       is-extglob: 1.0.0
@@ -133,6 +153,18 @@ packages:
     dependencies:
       nan: 2.6.2
     resolution: f19fd28f43eeaf761680e519a203c4d0b3d31aff
+  /gauge/2.7.4:
+    dependencies:
+      aproba: 1.1.1
+      console-control-strings: 1.1.0
+      has-unicode: 2.0.1
+      object-assign: 4.1.1
+      signal-exit: 3.0.2
+      string-width: 1.0.2
+      strip-ansi: 3.0.1
+      wide-align: 1.1.2
+    resolution: 2c03405c7538c39d7eb37b317022e325fb018bf7
+  /github-from-package/0.0.0: 97fb5d96bfde8973313f20e8288ef9a167fa64ce
   /glob-base/0.3.0:
     dependencies:
       glob-parent: 2.0.0
@@ -160,6 +192,7 @@ packages:
     dependencies:
       ansi-regex: 2.1.1
     resolution: 34f5049ce1ecdf2b0649af3ef24e45ed35416d91
+  /has-unicode/2.0.1: e0e6fe6a28cf51138855e086d1691e771de2a8b9
   /ignore-by-default/1.0.1: 48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09
   /imurmurhash/0.1.4: 9218b9b2b928a238b13dc4fb6b6d576f231453ea
   /infinity-agent/2.0.3: 45e0e2ff7a9eb030b27d62b74b3744b7a7ac4216
@@ -181,6 +214,10 @@ packages:
     dependencies:
       number-is-nan: 1.0.1
     resolution: cc6677695602be550ef11e8b4aa6305342b6d0aa
+  /is-fullwidth-code-point/1.0.0:
+    dependencies:
+      number-is-nan: 1.0.1
+    resolution: ef9e31386f031a7f0d643af82fde50c457ef00cb
   /is-glob/2.0.1:
     dependencies:
       is-extglob: 1.0.0
@@ -286,6 +323,7 @@ packages:
     dependencies:
       inherits: 2.0.3
     resolution: 19f619591519f096769a5ba9a86e6eeec823c3cf
+  /node-abi/2.0.2: 00f3e0a58100eb480133b48c99a32cc1f9e6c93e
   /nodemon/1.11.0:
     dependencies:
       chokidar: 1.7.0
@@ -299,6 +337,7 @@ packages:
       undefsafe: 0.0.3
       update-notifier: 0.5.0
     resolution: 226c562bd2a7b13d3d7518b49ad4828a3623d06c
+  /noop-logger/0.1.1: 94a2b1633c4f1317553007d8966fd0e841b6a4c2
   /nopt/1.0.10:
     dependencies:
       abbrev: 1.1.0
@@ -307,6 +346,13 @@ packages:
     dependencies:
       remove-trailing-separator: 1.0.1
     resolution: 1ab28b556e198363a8c1a6f7e6fa20137fe6aed9
+  /npmlog/4.1.0:
+    dependencies:
+      are-we-there-yet: 1.1.4
+      console-control-strings: 1.1.0
+      gauge: 2.7.4
+      set-blocking: 2.0.0
+    resolution: dc59bee85f64f00ed424efb2af0783df25d1c0b5
   /number-is-nan/1.0.1: 097b602b53422a522c1afb8790318336941a011d
   /object-assign/3.0.0: 9bedd5ca0897949bca47e7ff408062d549f587f2
   /object-assign/4.1.1: 2109adc7965887cfc05cbbd442cac8bfbb360863
@@ -319,6 +365,10 @@ packages:
     dependencies:
       wrappy: 1.0.2
     resolution: b2e261557ce4c314ec8304f3fa82663e4297ca20
+  /once/1.4.0:
+    dependencies:
+      wrappy: 1.0.2
+    resolution: 583b1aa775961d4b113ac17d9c50baef9dd76bd1
   /os-homedir/1.0.2: ffbc4988336e0e833de0c168c7ef152121aa7fb3
   /os-tmpdir/1.0.2: bbe67406c79aa85c5cfec766fe5734555dfa1274
   /osenv/0.1.4:
@@ -348,6 +398,23 @@ packages:
       pinkie: 2.0.4
     resolution: 2135d6dfa7a358c069ac9b178776288228450ffa
   /pinkie/2.0.4: 72556b80cfa0d48a974e80e77248e80ed4f7f870
+  /prebuild-install/2.1.2:
+    dependencies:
+      expand-template: 1.0.3
+      github-from-package: 0.0.0
+      minimist: 1.2.0
+      mkdirp: 0.5.1
+      node-abi: 2.0.2
+      noop-logger: 0.1.1
+      npmlog: 4.1.0
+      os-homedir: 1.0.2
+      pump: 1.0.2
+      rc: 1.2.1
+      simple-get: 1.4.3
+      tar-fs: 1.15.2
+      tunnel-agent: 0.4.3
+      xtend: 4.0.1
+    resolution: d9ae0ca85330e03962d93292f95a8b44c2ebf505
   /prepend-http/1.0.4: d4f4562b0ce3696e41ac52d0e002e57a635dc6dc
   /preserve/0.2.0: 815ed1f6ebc65926f865b310c0713bcb3315ce4b
   /process-nextick-args/1.0.7: 150e20b756590ad3f91093f25a4f2ad8bff30ba3
@@ -355,6 +422,11 @@ packages:
     dependencies:
       event-stream: 3.3.4
     resolution: b421b24140d6203f1ed3c76996b4427b08e8c014
+  /pump/1.0.2:
+    dependencies:
+      end-of-stream: 1.4.0
+      once: 1.4.0
+    resolution: 3b3ee6512f94f0e575538c17995f9f16990a5d51
   /randomatic/1.1.6:
     dependencies:
       is-number: 2.1.0
@@ -405,12 +477,25 @@ packages:
     dependencies:
       is-finite: 1.0.2
     resolution: 3d4114218877537494f97f77f9785fab810fa4ac
+  /robotjs/0.4.7:
+    dependencies:
+      nan: 2.6.2
+      prebuild-install: 2.1.2
+    resolution: b2d20311381d7e76665417c0ac66882e69f78132
   /semver-diff/2.1.0:
     dependencies:
       semver: 5.3.0
     resolution: 4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36
   /semver/5.3.0: 9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f
+  /set-blocking/2.0.0: 045f9782d011ae9a6803ddd382b24392b3d890f7
   /set-immediate-shim/1.0.1: 4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61
+  /signal-exit/3.0.2: b5fdc08f1287ea1178628e415e25132b73646c6d
+  /simple-get/1.4.3:
+    dependencies:
+      once: 1.4.0
+      unzip-response: 1.0.2
+      xtend: 4.0.1
+    resolution: e9755eda407e96da40c5e5158c9ea37b33becbeb
   /slide/1.1.6: 56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707
   /split/0.3.3:
     dependencies:
@@ -426,6 +511,12 @@ packages:
     dependencies:
       strip-ansi: 3.0.1
     resolution: 56970fb1c38558e9e70b728bf3de269ac45adfac
+  /string-width/1.0.2:
+    dependencies:
+      code-point-at: 1.1.0
+      is-fullwidth-code-point: 1.0.0
+      strip-ansi: 3.0.1
+    resolution: 118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3
   /string_decoder/1.0.0:
     dependencies:
       buffer-shims: 1.0.0
@@ -436,13 +527,29 @@ packages:
     resolution: 6a385fb8853d952d5ff05d0e8aaf94278dc63dcf
   /strip-json-comments/2.0.1: 3c531942e908c2697c0ec344858c286c7ca0a60a
   /supports-color/2.0.0: 535d045ce6b6363fa40117084629995e9df324c7
+  /tar-fs/1.15.2:
+    dependencies:
+      chownr: 1.0.1
+      mkdirp: 0.5.1
+      pump: 1.0.2
+      tar-stream: 1.5.4
+    resolution: 761f5b32932c7b39461a60d537faea0d8084830c
+  /tar-stream/1.5.4:
+    dependencies:
+      bl: 1.2.1
+      end-of-stream: 1.4.0
+      readable-stream: 2.2.9
+      xtend: 4.0.1
+    resolution: 36549cf04ed1aee9b2a30c0143252238daf94016
   /through/2.3.8: 0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5
   /timed-out/2.0.0: f38b0ae81d3747d628001f41dafc652ace671c0a
   /touch/1.0.0:
     dependencies:
       nopt: 1.0.10
     resolution: 449cbe2dbae5a8c8038e30d71fa0ff464947c4de
+  /tunnel-agent/0.4.3: 6373db76909fe570e08d73583365ed828a74eeeb
   /undefsafe/0.0.3: ecca3a03e56b9af17385baac812ac83b994a962f
+  /unzip-response/1.0.2: b984f0877fc0a89c2c773cc1ef7b5b232b5b06fe
   /update-notifier/0.5.0:
     dependencies:
       chalk: 1.1.3
@@ -455,6 +562,10 @@ packages:
     resolution: 07b5dc2066b3627ab3b4f530130f7eddda07a4cc
   /util-deprecate/1.0.2: 450d4dc9fa70de732762fbd2d4a28981419a0ccf
   /uuid/2.0.3: 67e2e863797215530dff318e5bf9dcebfd47b21a
+  /wide-align/1.1.2:
+    dependencies:
+      string-width: 1.0.2
+    resolution: 571e0f1b0604636ebc0dfc21b0339bbe31341710
   /wrappy/1.0.2: b5243d8f3ec1aa35f1364605bc0d1036e30ab69f
   /write-file-atomic/1.3.4:
     dependencies:
@@ -466,5 +577,6 @@ packages:
     dependencies:
       os-homedir: 1.0.2
     resolution: edbc903cc385fc04523d966a335504b5504d1bd2
+  /xtend/4.0.1: a5c6d532be656e23db820efb943a1f04998d63af
 registry: 'https://registry.npmjs.org/'
 version: 2
