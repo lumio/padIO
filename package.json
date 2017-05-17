@@ -1,0 +1,15 @@
+{
+  "name": "padio",
+  "version": "1.0.0",
+  "description": "Use your midi controller to control your Mac",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Falk <benjamin.falk@cyanjoe.com> (https://github.com/lumio)",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.8.4",
+    "midi": "^0.9.5"
+  }
+}

@@ -1,0 +1,24 @@
+dependencies:
+  js-yaml@^3.8.4: 3.8.4
+  midi@^0.9.5: 0.9.5
+packages:
+  /argparse/1.0.9:
+    dependencies:
+      sprintf-js: 1.0.3
+    resolution: 73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86
+  /bindings/1.2.1: 14ad6113812d2d37d72e67b4cacb4bb726505f11
+  /esprima/3.1.3: fdca51cee6133895e3c88d535ce49dbff62a4633
+  /js-yaml/3.8.4:
+    dependencies:
+      argparse: 1.0.9
+      esprima: 3.1.3
+    resolution: 520b4564f86573ba96662af85a8cafa7b4b5a6f6
+  /midi/0.9.5:
+    dependencies:
+      bindings: 1.2.1
+      nan: 2.6.2
+    resolution: fc323aff3e81b0d4099caeead535ba679c6e9d88
+  /nan/2.6.2: e4ff34e6c95fdfb5aecc08de6596f43605a7db45
+  /sprintf-js/1.0.3: 04e6926f662895354f3dd015203633b857297e2c
+registry: 'https://registry.npmjs.org/'
+version: 2
