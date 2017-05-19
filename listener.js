@@ -1,20 +1,27 @@
 const config = require( './lib/config' );
-const midiEvents = require( './lib/midiEvents' );
+const midiInputChangeListener = require( './lib/midiInputChangeListener' );
+
+let configObj = {};
+let unbindFunction = null;
+let wantedDevices = [];
+let currentListener = null;
+function rebindListener( configObj, wantedDevices, unbindFunction ) {
+  if ( typeof unbindFunction === 'function' ) {
+    unbindFunction();
+  }
+}
 
 module.exports = function() {
-  let configObj = {};
-  let unbindFunction = false;
   config( './config.yml', ( err, obj ) => {
     if ( err ) {
       return console.error( err );
     }
-
-    if ( typeof unbindFunction === 'function' ) {
-      unbindFunction();
-    }
-
     configObj = obj;
-    const devices = Object.keys( obj.input );
-    unbindFunction = midiEvents( devices );
+    wantedDevices = Object.keys( obj.input );
+    unbindFunction = rebindListener( configObj, wantedDevices, unbindFunction );
+  } );
+
+  midiInputChangeListener( () => {
+    unbindFunction = rebindListener( configObj, wantedDevices, unbindFunction );
   } );
 }
