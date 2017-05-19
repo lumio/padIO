@@ -1,3 +1,4 @@
 input:
   LPD8:
-    - null
+    144+40:
+      exec: say 'Hello world'
