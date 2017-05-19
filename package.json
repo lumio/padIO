@@ -4,7 +4,8 @@
   "description": "Use your midi controller to control your Mac",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon .",
+    "start": "pm2 start index.js --name='padio'",
+    "dev-start": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Benjamin Falk <benjamin.falk@cyanjoe.com> (https://github.com/lumio)",
@@ -12,6 +13,7 @@
   "dependencies": {
     "js-yaml": "^3.8.4",
     "midi": "^0.9.5",
+    "pm2": "^2.4.6",
     "robotjs": "^0.4.7"
   },
   "devDependencies": {
