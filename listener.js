@@ -1,5 +1,7 @@
 const config = require( './lib/config' );
+const midi = require( './lib/midi' );
 const midiInputChangeListener = require( './lib/midiInputChangeListener' );
+const execMessage = require( './lib/execMessage' );
 
 let configObj = {};
 let unbindFunction = null;
@@ -9,6 +11,10 @@ function rebindListener( configObj, wantedDevices, unbindFunction ) {
   if ( typeof unbindFunction === 'function' ) {
     unbindFunction();
   }
+
+  midi.bind( wantedDevices, ( deviceName, deltaTime, message ) => {
+    execMessage( configObj, deviceName, deltaTime, message );
+  } );
 }
 
 module.exports = function() {
