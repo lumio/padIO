@@ -1,11 +1,7 @@
 delay: 0.15
 input:
   LPD8:
-    144+36+<50:
-      exec: say 'Soft touch'
-    144+36+<50%:
-      exec: say 'Soft percentage'
-    144+36+>50%:
-      exec: say 'Hard percentage'
+    144+37+[30-50%]:
+      exec: say 'Ok'
     144+40:
-      exec: say 'Hello world'
+      open: /Applications/Atom Beta.app
