@@ -30,7 +30,6 @@ module.exports = function() {
     }
     configObj = obj;
     wantedDevices = Object.keys( obj.input );
-    console.log( configObj );
     unbindFunction = rebindListener( configObj, wantedDevices, unbindFunction );
   } );
 
