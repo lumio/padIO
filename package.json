@@ -15,6 +15,7 @@
     "midi": "^0.9.5",
     "pm2": "^2.4.6",
     "robotjs": "^0.4.7",
+    "segfault-handler": "^1.0.0",
     "shell-escape": "^0.2.0"
   },
   "devDependencies": {

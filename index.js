@@ -1,3 +1,6 @@
+const SegfaultHandler = require('segfault-handler');
+SegfaultHandler.registerHandler('padio-crash.log');
+
 const listener = require( './listener' );
 const midi = require( './lib/midi' );
 
