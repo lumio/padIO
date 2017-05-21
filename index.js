@@ -9,5 +9,6 @@ if ( process.argv.indexOf( '--list' ) > -1 ) {
   process.exit( 0 );
 }
 else {
+  console.log( 'Listening for MIDI input...' );
   listener();
 }
