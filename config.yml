@@ -1,11 +1,12 @@
 delay: 0.15
+debug: false
 input:
   LPD8:
-    144+37+[30-50%]:
-      exec: say 'Ok'
-    144+36:
+    144+39:
       open: /Applications/Google Chrome.app
-    144+41:
+    144+36:
+      open: /Applications/MacVim.app
+    144+38:
       open: /Applications/iTerm.app
-    144+40:
-      open: /Applications/Atom Beta.app
+    144+43:
+      open: /Applications/Google Chrome.app
